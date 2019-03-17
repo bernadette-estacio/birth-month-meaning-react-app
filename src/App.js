@@ -34,14 +34,7 @@ class App extends Component {
             monthMenu={this.props.monthMenu}
             setMeaning={this.setMeaning}
           />
-
-          {/* Main Pane */}
-          <div className="mainContent">
-            <h1>Birth Month Meaning</h1>
-            <hr className="hrStyle" />
-            <h2>{this.state.month}</h2>
-            <div>{this.state.meaning}</div>
-          </div>
+          <MainContent month={this.state.month} meaning={this.state.meaning} />
         </main>
 
         <footer>
@@ -68,6 +61,17 @@ const MonthMenu = props => {
           </li>
         ))}
       </ul>
+    </div>
+  );
+};
+
+const MainContent = props => {
+  return (
+    <div className="mainContent">
+      <h1>Birth Month Meaning</h1>
+      <hr className="hrStyle" />
+      <h2>{props.month}</h2>
+      <div>{props.meaning}</div>
     </div>
   );
 };
