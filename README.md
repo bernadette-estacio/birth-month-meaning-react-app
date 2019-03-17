@@ -2,7 +2,7 @@
 **Birth Month Meaning App**
 --------------------
 
-[Birth Month Meaning App] shows the meaning of your birth month.
+Birth Month Meaning App shows the meaning of your birth month.
 
  - It is a single-page, responsive application programmed with React
 
