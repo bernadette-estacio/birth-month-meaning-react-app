@@ -1,14 +1,226 @@
 body {
-  margin: 0;
-  padding: 0;
+  background: url(img/background.jpg) center center / cover no-repeat fixed;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
+  font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+/* All Links */
+a {
+  color: #404040;
+}
+a:hover,
+a:active {
+  font-weight: bold;
+  outline: none;
+}
+
+nav {
+  min-height: 30px;
+  margin: 20px;
+}
+
+nav a {
+  color: #404040;
+  font-size: 1.125em;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* Months Menu */
+.sidenav {
+  height: 100%;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.sidenav p {
+  font-size: 1.625em;
+  margin-top: -5px auto 10px;
+}
+
+ul {
+  margin: auto;
+  padding-left: 0;
+  cursor: pointer;
+}
+
+li {
+  width: 170px;
+  height: 50px;
+  position: inline-block;
+  color: #fff;
+  font-family: Impact, sans-serif;
+  font-size: 1.625em;
+  line-height: 1.75;
+  letter-spacing: 2px;
+  margin: 5px auto;
+  padding: 0;
+  border-radius: 8px;
+  text-align: center;
+  list-style: none;
+}
+
+li#January {
+  background: #2d5baa;
+}
+
+li#February {
+  background: #00b8ec;
+}
+
+li#March {
+  background: #6dcff6;
+}
+
+li#April {
+  background: #00afad;
+}
+
+li#May {
+  background: #00a957;
+}
+
+li#June {
+  background: #92c847;
+}
+
+li#July {
+  background: #ffe22a;
+}
+
+li#August {
+  background: #f78e1e;
+}
+
+li#September {
+  background: #ef3e2e;
+}
+
+li#October {
+  background: #b41e8e;
+}
+
+li#November {
+  background: #715ba7;
+}
+
+li#December {
+  background: #39388a;
+}
+
+/* Title Divider */
+.hrStyle {
+  height: 10px;
+  border: 0;
+  box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}
+
+/* Month */
+.mainContent {
+  flex-grow: 3;
+  margin-right: 40px;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.mainContent p {
+  display: block;
+  text-align: center;
+  font-size: 1em;
+  margin: 12px;
+}
+
+footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding-top: 30px;
+  text-align: center;
+}
+
+@media screen and (max-width: 991px) {
+  .sidenav p {
+    font-size: 1.375em;
+  }
+
+  li {
+    width: 135px;
+    height: 35px;
+    font-size: 1.25em;
+    letter-spacing: 1px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidenav {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .mainContent {
+    margin-right: 0;
+  }
+
+  .hrStyle {
+    margin: 25px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 1.5625em;
+  }
+
+  li {
+    width: 100px;
+    height: 30px;
+    font-size: 1.125em;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  li {
+    height: 28px;
+    font-size: 1em;
+    padding: 2px;
+  }
 }
