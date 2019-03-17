@@ -1,3 +1,19 @@
+
+**Birth Month Meaning App**
+--------------------
+
+Birth Month Meaning App shows the meaning of your birth month.
+
+ - It is a single-page, responsive application programmed with React
+
+**Front-End:**
+
+ - React
+ - CSS
+ - HTML
+
+--------------------
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
