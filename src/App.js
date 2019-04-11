@@ -17,6 +17,8 @@ class App extends Component {
   };
 
   render() {
+    const { month, meaning } = this.state;
+
     return (
       <div>
         {/* Home Link */}
@@ -35,7 +37,7 @@ class App extends Component {
             monthMenu={this.props.monthMenu}
             setMeaning={this.setMeaning}
           />
-          <MainContent month={this.state.month} meaning={this.state.meaning} />
+          <MainContent month={month} meaning={meaning} />
         </main>
 
         <footer>
@@ -51,13 +53,13 @@ class App extends Component {
   }
 }
 
-const MonthMenu = props => {
+const MonthMenu = ({ monthMenu, setMeaning }) => {
   return (
     <div className="sidenav">
       <p>Select Your Birth Month:</p>
       <ul>
-        {props.monthMenu.map((month, i) => (
-          <li key={month} id={month} onClick={props.setMeaning}>
+        {monthMenu.map(month => (
+          <li key={month} id={month} onClick={setMeaning}>
             {month}
           </li>
         ))}
@@ -66,13 +68,13 @@ const MonthMenu = props => {
   );
 };
 
-const MainContent = props => {
+const MainContent = ({ month, meaning }) => {
   return (
     <div className="mainContent">
       <h1>Birth Month Meaning</h1>
       <hr className="hrStyle" />
-      <h2>{props.month}</h2>
-      <div>{props.meaning}</div>
+      <h2>{month}</h2>
+      <div>{meaning}</div>
     </div>
   );
 };
