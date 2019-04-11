@@ -9,14 +9,23 @@ class App extends Component {
   };
 
   setMeaning = ev => {
+    this.setState({
+      month: null,
+      meaning: null
+    });
     let clickedMonth = ev.currentTarget.id;
     const index = this.props.monthMenu.indexOf(clickedMonth);
     const months = [...this.state.monthDB];
     const data = months[index][clickedMonth];
-    this.setState({
-      month: clickedMonth,
-      meaning: data.map((line, i) => <p key={i}>{line}</p>)
-    });
+    setTimeout(
+      function() {
+        this.setState({
+          month: clickedMonth,
+          meaning: data.map((line, i) => <p key={i}>{line}</p>)
+        });
+      }.bind(this),
+      350
+    );
   };
 
   render() {
