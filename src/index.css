@@ -73,6 +73,11 @@ li {
   list-style: none;
 }
 
+li:hover {
+  -webkit-filter: contrast(200%);
+  filter: contrast(200%);
+}
+
 li#January {
   background: #2d5baa;
 }
