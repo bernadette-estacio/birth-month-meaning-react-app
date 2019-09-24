@@ -32,7 +32,7 @@ class App extends Component {
     const { month, meaning } = this.state;
 
     return (
-      <div>
+      <div class="content">
         {/* Home Link */}
         <nav>
           <a

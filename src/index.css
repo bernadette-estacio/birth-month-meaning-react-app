@@ -11,6 +11,12 @@ body {
   padding: 0;
 }
 
+.content {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
 /* All Links */
 a {
   color: #404040;
@@ -37,6 +43,7 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  flex: 1;
 }
 
 /* Months Menu */
