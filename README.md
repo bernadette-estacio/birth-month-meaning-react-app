@@ -2,7 +2,7 @@
 **Birth Month Meaning App**
 --------------------
 
-[Birth Month Meaning App](http://www.http://bernadetteengleman.com/Apps/Birth-Month-Meaning/) shows the meaning of your birth month.
+[Birth Month Meaning App](http://www.bernadetteengleman.com/Apps/Birth-Month-Meaning/) shows the meaning of your birth month.
 
 ![Birth Month Meaning Webpage](http://www.bernadetteengleman.com/img/portfolio/birthmonththumbnail.jpg)
 
