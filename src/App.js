@@ -18,7 +18,7 @@ class App extends Component {
     const months = [...this.state.monthDB];
     const data = months[index][clickedMonth];
     setTimeout(
-      function() {
+      function () {
         this.setState({
           month: clickedMonth,
           meaning: data.map((line, i) => <p key={i}>{line}</p>)
@@ -36,7 +36,7 @@ class App extends Component {
         {/* Home Link */}
         <nav>
           <a
-            href="http://bernadetteengleman.com/index.html"
+            href="https://bernadetteestacio.site/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -53,11 +53,7 @@ class App extends Component {
         </main>
 
         <footer>
-          <p>
-            <small>
-              Copyright © 2015-{new Date().getFullYear()} Bernadette Estacio.
-              All rights reserved
-            </small>
+          <p>© 2015-{new Date().getFullYear()} Bernadette Estacio
           </p>
         </footer>
       </div>
