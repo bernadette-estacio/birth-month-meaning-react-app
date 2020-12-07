@@ -2,9 +2,9 @@
 **Birth Month Meaning App**
 --------------------
 
-[Birth Month Meaning App](http://localhost:1234/projects/Birth-Month-Meaning/index.html) shows the meaning of your birth month.
+[Birth Month Meaning App](https://bernadetteestacio.site/projects/birth-month-meaning/) shows the meaning of your birth month.
 
-![Birth Month Meaning Webpage](http://localhost:1234/birth-month-meaning.06b4efb1.png)
+![Birth Month Meaning Webpage](https://bernadetteestacio.site/birth-month-meaning.1a9a055c.png)
 
  - It is a single-page, responsive application programmed using React
 
