@@ -2,11 +2,11 @@
 **Birth Month Meaning App**
 --------------------
 
-[Birth Month Meaning App](http://www.bernadetteengleman.com/Apps/Birth-Month-Meaning/) shows the meaning of your birth month.
+[Birth Month Meaning App](http://localhost:1234/projects/Birth-Month-Meaning/index.html) shows the meaning of your birth month.
 
-![Birth Month Meaning Webpage](http://www.bernadetteengleman.com/img/portfolio/birthmonththumbnail.jpg)
+![Birth Month Meaning Webpage](http://localhost:1234/birth-month-meaning.06b4efb1.png)
 
- - It is a single-page, responsive application programmed with React
+ - It is a single-page, responsive application programmed using React
 
 **Front-End:**
 
