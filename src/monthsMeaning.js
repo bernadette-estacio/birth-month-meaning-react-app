@@ -1,4 +1,4 @@
-const months = [
+const monthsMeaning = [
   {
     January: [
       "Ambitious and serious",
@@ -370,5 +370,5 @@ const months = [
 ];
 
 export function getMonths() {
-  return months;
+  return monthsMeaning;
 }
