@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { getMonths } from "./monthsMeaning";
-import MonthMenu from "./components/MonthMenu";
-import MainContent from "./components/MainContent";
+import MonthMenu from "./components/MonthMenu/monthMenu";
+import MainContent from "./components/MainContent/mainContent";
 import monthsList from "./monthsList";
 
 const App = () => {
