@@ -13,8 +13,8 @@ const MonthMenu = ({ month, setMonth, setMeaning, setClickMonth }) => {
 
   useEffect(() => {
     if (month) {
-      let meaning = monthDB[monthsList.indexOf(month)][month];
-      let showMeaning = setTimeout(() => {
+      const meaning = monthDB[monthsList.indexOf(month)][month];
+      const showMeaning = setTimeout(() => {
         setMeaning(meaning.map((sentence, i) => <p key={i}>{sentence}</p>));
         setClickMonth(true);
       }, 350);
