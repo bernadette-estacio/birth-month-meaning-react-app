@@ -3,13 +3,15 @@ import "./styles.scss";
 
 const Nav = () => (
   <nav>
-    <a
-      href="https://bernadetteestacio.site/"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Home
-    </a>
+    <button className="btn">
+      <a
+        href="https://bernadetteestacio.site/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Home
+      </a>
+    </button>
   </nav>
 );
 
