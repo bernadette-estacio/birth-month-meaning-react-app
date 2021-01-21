@@ -1,17 +1,13 @@
-import React from 'react';
-import "./styles.css";
+import React from "react";
+import Header from "../Context/Header/header";
+import Meaning from "../Context/Meaning/meaning";
+import "./styles.scss";
 
-const MainContent = ({ month, meaning, clickMonthState }) => {
-  const clickMonth = clickMonthState.clickMonth;
-
-  return (
-    <div className="mainContent">
-      <h1>Birth Month Meaning</h1>
-      <hr className="hrStyle" />
-      <h2>{month}</h2>
-      <div className={clickMonth ? "visible" : "invisible"}>{meaning}</div>
-    </div>
-  );
-};
+const MainContent = ({ month, meaning, clickMonth }) => (
+  <div className="mainContent">
+    <Header month={month} />
+    <Meaning meaning={meaning} clickMonth={clickMonth} />
+  </div>
+);
 
 export default MainContent;

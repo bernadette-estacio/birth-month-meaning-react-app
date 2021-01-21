@@ -11,12 +11,6 @@ body {
   padding: 0;
 }
 
-.content {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-}
-
 /* All Links */
 a {
   color: #404040;
@@ -27,37 +21,20 @@ a:active {
   outline: none;
 }
 
-nav {
-  min-height: 10px;
-  margin: 10px;
-}
-
-nav a {
-  color: #404040;
-  font-size: 1.125em;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-main {
+.content {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex: 1;
-}
+  min-height: 100vh;
+  flex-direction: column;
 
-@media screen and (max-width: 767px) {
   main {
     display: flex;
-    flex-direction: column;
-  }
-}
+    flex-direction: row;
+    justify-content: space-around;
+    flex: 1;
 
-footer {
-  position: relative;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  padding-top: 30px;
-  text-align: center;
+    @media (max-width: 767px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 }

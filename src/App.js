@@ -1,63 +1,32 @@
-import React, { useState } from 'react';
-import { getMonths } from "./monthsMeaning";
-import MonthMenu from "./components/MonthMenu/monthMenu";
+import React, { useState } from "react";
+import Nav from "./components/Context/Nav/nav";
+import Footer from "./components/Context/Footer/footer";
 import MainContent from "./components/MainContent/mainContent";
-import monthsList from "./monthsList";
+import MonthMenu from "./components/Context/MonthMenu/monthMenu";
 
 const App = () => {
-  const [monthDB, setMonthDB] = useState(getMonths());
-
   const [month, setMonth] = useState(null);
-
   const [meaning, setMeaning] = useState(null);
-
-  const [clickMonthState, setClickMonthState] = useState({
-    clickMonth: false
-  });
-
-  const showMeaning = e => {
-    setClickMonthState({ clickMonth: false })
-    let clickedMonth = e.currentTarget.id;
-    const index = monthsList.indexOf(clickedMonth);
-    const data = monthDB[index][clickedMonth];
-    setTimeout(() => {
-      setMonth(clickedMonth);
-      setMeaning(data && data.map((line, i) => <p key={i}>{line}</p>));
-      setClickMonthState({ clickMonth: true })
-    }, 350);
-
-  };
+  const [clickMonth, setClickMonth] = useState(false);
 
   return (
-    <div class="content">
-      {/* Home Link */}
-      <nav>
-        <a
-          href="https://bernadetteestacio.site/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Home
-          </a>
-      </nav>
+    <div className="content">
+      <Nav />
 
       <main>
         <MonthMenu
-          monthsList={monthsList}
-          showMeaning={showMeaning}
-        />
-        <MainContent
           month={month}
-          meaning={meaning}
-          clickMonthState={clickMonthState} />
+          setMonth={setMonth}
+          setMeaning={setMeaning}
+          setClickMonth={setClickMonth}
+        />
+
+        <MainContent month={month} meaning={meaning} clickMonth={clickMonth} />
       </main>
 
-      <footer>
-        <p>© 2015-{new Date().getFullYear()} Bernadette Estacio
-          </p>
-      </footer>
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;
