@@ -14,11 +14,12 @@ body {
 /* All Links */
 a {
   color: #404040;
-}
-a:hover,
-a:active {
-  font-weight: bold;
-  outline: none;
+
+  &:hover,
+  &:active {
+    font-weight: bold;
+    outline: none;
+  }
 }
 
 .content {
