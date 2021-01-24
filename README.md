@@ -1,20 +1,18 @@
-
-**Birth Month Meaning App**
---------------------
+## **Birth Month Meaning App**
 
 [Birth Month Meaning App](https://bernadetteestacio.site/projects/birth-month-meaning/) shows the meaning of your birth month.
 
-![Birth Month Meaning Webpage](https://bernadetteestacio.site/birth-month-meaning.1a9a055c.png)
+![Birth Month Meaning Webpage](https://bernadetteestacio.site/assets/img/portfolio/birth-month-meaning.png)
 
- - It is a single-page, responsive application programmed using React
+- It is a single-page, responsive application programmed using React
 
 **Front-End:**
 
- - React
- - CSS
- - HTML
+- React
+- CSS
+- HTML
 
---------------------
+---
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
